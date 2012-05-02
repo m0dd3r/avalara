@@ -1,7 +1,6 @@
 # encoding: UTF-8
 
 require 'hashie/trash'
-require 'hashie/extensions/coercion'
 
 module Avalara
   module Types
@@ -14,7 +13,6 @@ module Avalara
     # available, locally.
     #
     class Stash < ::Hashie::Trash
-      include Hashie::Extensions::Coercion
 
 
       private

@@ -5,7 +5,6 @@ module Avalara
   module Request
     # Same as GetTaxRequest
     class Invoice < Avalara::Types::Stash
-      coerce_key :DocDate, Avalara::Types::Date
 
       # Set outgoing
       property :CustomerCode, :from => :customer_code
